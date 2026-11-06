@@ -1,0 +1,41 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+coverage/
+
+# Environment and secrets
+.env.*
+!.env.example
+!.env.production.example
+
+# Local databases and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+backups/
+database/
+
+# Logs and runtime files
+*.log
+logs/
+pids/
+*.pid
+
+# OS and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build and coverage
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# Runtime admin uploads (store separately in production)
+/storefront/images/uploads/

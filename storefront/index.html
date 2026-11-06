@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f3e9">
+  <title>PAATI & CO. — A Taste of Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261106-6">
+</head>
+<body>
+  <div class="announcement"><span>✦</span> A little taste of home, delivered to your doorstep <span class="announcement-link">FREE SHIPPING ON ORDERS ABOVE ₹799</span></div>
+  <header class="site-header">
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    <a class="brand" href="#" aria-label="Paati and Co home">
+      <span class="brand-mark">பா</span>
+      <span class="brand-copy"><b>PAATI <i>&</i> CO.</b><small>A TASTE OF HOME</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop">Shop all</a><a href="#bestsellers">Bestsellers</a><a href="#gifting">Gifting</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="icon-btn account-btn" aria-label="Customer account">Sign in</button>
+      <button class="cart-trigger" id="cartOpen" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="Search sweets, snacks, coffee…"><button id="searchClose">✕</button></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> MADE WITH A LITTLE EXTRA LOVE</div>
+        <h1>Some things<br>taste like <em>home.</em></h1>
+        <p>Recipes passed down, flavours remembered, and little moments worth sharing. Bring the warmth of a South Indian kitchen to yours.</p>
+        <a class="primary-btn" href="#shop">EXPLORE THE STORE <span>↗</span></a>
+        <div class="hero-note"><span>✳</span> Small-batch goodness · Big-hearted flavours</div>
+      </div>
+      <div class="hero-art">
+        <div class="sun-disc"></div><div class="hero-leaf leaf-one">❧</div><div class="hero-leaf leaf-two">❧</div>
+        <div class="hero-food food-main"><img src="/images/mysore-pak.jpg" alt="Ghee Mysore Pak"><small>GHEE MYSORE PAK</small></div>
+        <div class="hero-food food-side"><img src="/images/filter-coffee.jpg" alt="South Indian filter coffee"><small>FILTER COFFEE</small></div>
+        <div class="hero-food food-small"><img src="/images/kai-murukku.png" alt="Kai murukku"></div>
+        <div class="hero-stamp">ROOTED IN<br><b>TRADITION</b><br>♥</div>
+      </div>
+      <div class="hero-bottom"><span>01 — 03</span><span class="hero-line"></span><span>THE GOODNESS COLLECTION</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><b>✳</b><span>Authentic recipes</span></div><div><b>♡</b><span>Made with care</span></div><div><b>⌁</b><span>Freshly packed</span></div><div><b>✦</b><span>Delivered with love</span></div>
+    </section>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading"><div><span class="kicker">A LITTLE SOMETHING FOR EVERYONE</span><h2>Find your <em>favourite.</em></h2></div><a class="text-link" href="#bestsellers">SHOP EVERYTHING ↗</a></div>
+      <div class="category-grid">
+        <button class="category-tile active" data-filter="All"><span class="cat-emoji">🍬</span><b>Everything</b><small>Explore all</small></button>
+        <button class="category-tile" data-filter="Sweets"><span class="cat-emoji">🥮</span><b>Sweets & treats</b><small>A little indulgence</small></button>
+        <button class="category-tile" data-filter="Snacks"><span class="cat-emoji">🥨</span><b>Savoury snacks</b><small>Crunch happy</small></button>
+        <button class="category-tile" data-filter="Coffee"><span class="cat-emoji">☕</span><b>Coffee & mixes</b><small>Slow mornings</small></button>
+        <button class="category-tile" data-filter="Gifting"><span class="cat-emoji">🎁</span><b>Gift boxes</b><small>Share the love</small></button>
+      </div>
+    </section>
+
+    <section class="products-section" id="shop"><span id="bestsellers" class="anchor-target"></span>
+      <div class="section-heading product-heading"><div><span class="kicker">THE CROWD PLEASERS</span><h2>Paati's <em>bestsellers.</em></h2></div><div class="product-tools"><span id="resultCount">Showing 6 favourites</span><select id="sortSelect" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option></select></div></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="center-action"><button class="outline-btn" id="showAll">VIEW ALL GOOD THINGS <span>↗</span></button></div>
+    </section>
+
+    <section class="feature-banner" id="gifting">
+      <div class="feature-art"><div class="gift-circle"><img src="/images/gift-box.png" alt="Traditional Indian sweets gift hamper"></div><div class="gift-spark">✳</div><div class="gift-label">A BOX FULL<br>OF LOVE</div></div>
+      <div class="feature-copy"><span class="kicker">GIVE A LITTLE HAPPINESS</span><h2>Good things are<br>better <em>shared.</em></h2><p>From thoughtful little treats to grand festive hampers, find a gift that says what words sometimes can't.</p><a href="#shop" class="light-btn">EXPLORE GIFT BOXES ↗</a></div>
+    </section>
+
+    <section class="reviews-section">
+      <div class="review-top"><span class="kicker">KIND WORDS, FULL HEARTS</span><h2>Loved in kitchens <em>everywhere.</em></h2><p>Real notes from people who made us part of their everyday.</p></div>
+      <div class="review-cards">
+        <article class="review-card"><div class="stars">★★★★★</div><p>“The taste took me straight back to my grandmother's kitchen. The Mysore pak is absolutely lovely.”</p><b>— Ananya R.</b><small>Verified customer</small></article>
+        <article class="review-card featured-review"><div class="stars">★★★★★</div><p>“Fresh, flavourful and beautifully packed. I ordered a gift box for my parents and they loved every bit.”</p><b>— Karthik S.</b><small>Verified customer</small></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“That filter coffee is now part of my morning ritual. Rich aroma, just the right kick.”</p><b>— Meera P.</b><small>Verified customer</small></article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story"><div class="story-photo"><img class="story-photo-image" src="/images/athirasam.webp" alt="Traditional South Indian athirasam sweets"><span>FROM OUR HOME<br>TO YOURS</span></div><div class="story-copy"><span class="kicker">A STORY THAT STARTED IN A KITCHEN</span><h2>Tradition isn't<br>just remembered.<br>It's <em>shared.</em></h2><p>We believe the best recipes carry more than ingredients. They carry memories, family stories and the joy of gathering around a table. Paati & Co. is our little way of keeping those flavours close.</p><a class="text-link" href="#footer">GET TO KNOW US ↗</a></div></section>
+
+  </main>
+
+  <footer id="footer"><div class="footer-main"><div class="footer-brand"><a class="brand footer-logo" href="#"><span class="brand-mark">பா</span><span class="brand-copy"><b>PAATI <i>&</i> CO.</b><small>A TASTE OF HOME</small></span></a><p>Bringing home-grown South Indian flavours to your doorstep, one little bite at a time.</p><div class="socials">◎ &nbsp; f &nbsp; ▶</div></div><div><b>EXPLORE</b><a href="#shop">Shop all</a><a href="#bestsellers">Bestsellers</a><a href="#gifting">Gifting</a><a href="#story">Our story</a></div><div><b>WE'RE HERE</b><a href="mailto:hello@paatiandco.example">Contact us</a><a href="#">FAQs</a><a href="#">Shipping & delivery</a><a href="#">Returns</a></div><div><b>THE FINE PRINT</b><a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Refund policy</a></div></div><div class="footer-bottom"><span>© 2026 PAATI & CO. — DEMO STOREFRONT</span><span>MADE WITH ♥ IN SOUTH INDIA</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><div><span class="kicker">YOUR LITTLE COLLECTION</span><h3>Your bag <span id="drawerCount">(0)</span></h3></div><button id="cartClose" aria-label="Close cart">✕</button></div><div class="cart-items" id="cartItems"><div class="empty-cart"><span>🧺</span><b>Your bag is taking a nap.</b><p>Add something delicious to wake it up.</p><button class="primary-btn" id="continueShopping">LET'S SHOP ↗</button></div></div><div class="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="subtotal">₹0</b></div><small>Shipping and taxes calculated at checkout.</small><button class="checkout-btn" id="checkout">CONTINUE TO CHECKOUT ↗</button><small class="demo-note">Cash on Delivery only · Online payments are not enabled.</small></div></aside>
+  <div class="toast" id="toast">Added to your bag ♥</div>
+  <script src="app.js?v=20261106-7"></script>
+</body>
+</html>
